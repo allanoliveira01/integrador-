@@ -1,0 +1,104 @@
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span.carregando{
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    display: block;
+    border: 12px solid #294f84;
+    border-top: 12px solid transparent;
+    border-radius: 50%;
+    animation: loading 1s ease-in-out infinite;
+}
+
+@keyframes loading {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/* Desktop grande */
+@media (min-width: 1200px) {
+    /* estilos específicos para telas largas */
+ }
+ 
+ /* Desktop padrão */
+ @media (min-width: 992px) and (max-width: 1199px) {
+    /* estilos específicos para desktops */
+ }
+ 
+ /* Tablets */
+ @media (min-width: 768px) and (max-width: 991px) {
+    .container{
+        width: 550px;
+        height: 950px;
+    }
+    .retangulo-usuario{
+        width: 450px;
+        margin-left: 20px;
+    }
+    .retangulo-senha{
+        width: 450px;
+        margin-left: 20px;
+    }
+    .botao-login{
+        width: 200px;
+        margin-right: 150px;
+    }
+ }
+ 
+ /* Smartphones */
+ @media (max-width: 767px) {
+    .container{
+        width: 350px;
+    }
+    .retangulo-usuario{
+        width: 220px;
+        height: 80px;
+        margin-left: 100px;
+    }
+    .retangulo-senha{
+        width: 220px;
+        height: 80px;
+        margin-left: 100px;
+    }
+    .botao-login{
+        width: 150px;
+        margin-right: 140px;
+        
+    }
+ }
+
+ @media (min-width: 315px) and (max-width: 520px){
+    .container{
+        width: 270px;
+    }
+    .retangulo-usuario{
+        width: 140px;
+        height: 70px;
+        margin-left: 110px;
+    }
+    .retangulo-senha{
+        width: 140px;
+        height: 70px;
+        margin-left: 110px;
+    }
+    .botao-login{
+        width: 100px;
+        height: 40px;
+        margin-right: 140px;
+        
+    }
+ }
+ 
